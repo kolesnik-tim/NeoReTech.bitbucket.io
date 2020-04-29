@@ -1,0 +1,60 @@
+//BEGIN footer
+footer.footer
+  .container
+    .footer__title
+      .row
+        .col-lg-7
+          h2 Have questions?
+          p Email us: 
+            a(href="mailto:neoretech@gmail.com") neoretech@gmail.com
+  .footer__content
+    .container
+      .row
+        .col-lg-6
+          .footer__consultation
+            strong or request a free consultation
+            ul
+              li Save your time.
+              li Find out the details and ask questions to a qualified professional.
+              li It is fast and free.
+          .footer__social
+            strong Our socials:
+            ul
+              li
+                a(href="#")
+                  +icon('instagram')
+              li
+                a(href="#")
+                  +icon('fb')
+              li
+                a(href="#")
+                  +icon('youtube')
+        .col-lg-6
+          form.footer__form.form
+            h3 Contact us
+            .form__block
+              span Your name
+              input(type="text" name="name" placeholder="Name")
+            .form__block
+              span Your mail
+              input(type="email" name="mail" placeholder="Mail")
+            .form__block
+              span Your message
+              textarea(placeholder="Message" name="message")
+            button(type="submit").button-green Send
+            .form__checkbox
+              input(type="checkbox" id="check")
+              label(for="check") Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            select
+              option(value="1") Select
+              option(value="1") Select 1
+              option(value="1") Select 2
+            b.lock
+              +icon('lock')
+              span Your personal data will not be shared with third parties.
+        .col-12
+          .footer__copyright
+            p © 2020 All rights reserved.
+            p Illustration by 
+              a(href="freepik.com") freepik.com
+//END footer

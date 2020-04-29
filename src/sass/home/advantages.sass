@@ -1,0 +1,268 @@
+.advantages
+  overflow: hidden
+  &__title
+    padding: 80px 0
+    box-shadow: 0px 10px 15px 0px rgba(198, 207, 217, 0.3)
+    z-index: 2
+    position: relative
+    +r(992)
+      padding-bottom: 330px
+    +r(767)
+      padding: 50px 0
+    h2
+      font-weight: bold
+      font-size: 64px
+      color: #050606
+      margin-bottom: 50px
+      +r(992)
+        z-index: 6
+        position: relative
+      +r(767)
+        font-size: 36px
+        margin-bottom: 30px
+      span
+        color: #53BF51
+    p
+      font-weight: 500
+      font-size: 16px
+      color: #8D8D8C
+      line-height: 24px
+      +r(992)
+        z-index: 6
+        position: relative
+  &__content
+    background: linear-gradient(180deg, #F1FCF7 78.13%, rgba(241, 252, 247, 0) 100%)
+    position: relative
+  &__world
+    position: relative
+    margin-top: -265px
+    z-index: 3
+    width: 530px
+    +center-x
+    +r(1200)
+      margin-left: -30px
+    +r(767)
+      margin-top: 110px
+      width: auto
+      margin-left: 0
+    &__img
+      position: relative
+      border-radius: 50%
+      +center
+      +r(767)
+        position: absolute
+        left: -153px
+        width: 285px
+      +r(374)
+        left: -190px
+      &::before
+        content: ''
+        position: absolute
+        width: calc(100% + 60px)
+        height: calc(100% + 60px)
+        display: block
+        background: #FFFFFF
+        box-shadow: 0px 3.30411px 24.7808px rgba(198, 207, 217, 0.3)
+        border-radius: 50%
+        z-index: -2
+        +r(767)
+          z-index: 1
+          width: calc(100% + 32px)
+          height: calc(100% + 32px)
+      &:after
+        content: ''
+        position: absolute
+        width: calc(100% + 30px)
+        height: calc(100% + 30px)
+        display: block
+        background: #FFFFFF
+        box-shadow: 0px 3.30411px 24.7808px rgba(198, 207, 217, 0.3)
+        border-radius: 50%
+        z-index: -1
+        +r(767)
+          z-index: 2
+          width: calc(100% + 16px)
+          height: calc(100% + 16px)
+      span
+        position: absolute
+        width: calc(100% + 90px)
+        height: calc(50% + 50px)
+        top: -50px
+        z-index: 1
+        display: block
+        background: #fff
+        border-radius: 50% 50% 0 0 / 100% 100% 0 0
+        +r(767)
+          display: none
+      img
+        width: 100%
+        position: relative
+        z-index: 3
+    &__list
+      position: absolute
+      bottom: -103px
+      width: 730px
+      height: 365px
+      border-radius: 0 0 50% 50% / 0 0 100% 100%
+      border-bottom: 1px solid #C6CFD9
+      border-left: 1px solid #C6CFD9
+      border-right: 1px solid #C6CFD9
+      +r(767)
+        position: static
+        width: 100%
+        margin-top: -50px
+        padding-left: 130px
+        border: none
+        display: flex
+        justify-content: flex-end
+        flex-direction: column-reverse
+        border-radius: 0
+        &::before
+          content: ''
+          border: 1px solid #C6CFD9
+          width: 385px
+          height: 385px
+          position: absolute
+          left: -208px
+          border-radius: 50%
+      +r(374)
+        padding-left: 95px
+        &::before
+          left: -244px
+      li
+        position: absolute
+        font-weight: bold
+        font-size: 16px
+        line-height: 24px
+        color: #000000
+        max-width: 160px
+        width: 100%
+        +r(767)
+          position: relative
+          bottom: auto !important
+          top: auto !important
+          left: auto !important
+          right: auto !important
+          max-width: 190px
+          margin-bottom: 25px
+        &::before
+          content: ''
+          background: #53BF51
+          width: 8px
+          height: 8px
+          border-radius: 50%
+          display: block
+          position: absolute
+          +r(767)
+            top: calc(50% - 4px) !important
+        &:nth-child(1)
+          bottom: -40px
+          left: 95px
+          &::before
+            top: -73px
+            left: 40px
+          +r(767)
+            &::before
+              left: -44px
+        &:nth-child(2)
+          bottom: -100px
+          left: 240px
+          &::before
+            top: -67px
+            left: 30px
+          +r(767)
+            padding-left: 40px
+            &::before
+              left: 14px
+        &:nth-child(3)
+          bottom: -70px
+          right: 120px
+          &::before
+            top: -42px
+            left: 20px
+          +r(767)
+            padding-left: 70px
+            &::before
+              left: 40px
+        &:nth-child(4)
+          bottom: 60px
+          right: -100px
+          &::before
+            top: -5px
+            left: -47px
+          +r(767)
+            padding-left: 70px
+            &::before
+              left: 36px
+        &:nth-child(5)
+          top: 140px
+          right: -190px
+          &::before
+            top: 5px
+            left: -65px
+          +r(767)
+            padding-left: 40px
+            &::before
+              left: 0px
+        &:nth-child(6)
+          top: 50px
+          right: -190px
+          &::before
+            top: 5px
+            left: -38px
+          +r(767)
+            &::before
+              left: -84px
+
+
+  &__video
+    padding-top: 35px
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    position: relative
+    +r(992)
+      padding-top: 180px
+    +r(767)
+      padding-top: 70px
+    &__text
+      background: #fff
+      box-shadow: 0px 4px 20px rgba(198, 207, 217, 0.5)
+      border-radius: 19px
+      position: relative
+      z-index: 2
+      padding: 15px
+      max-width: 285px
+      width: 100%
+      margin-bottom: 30px
+      &::before
+        content: ''
+        background-image: url('../img/advantages/triangle.png')
+        +cover
+        width: 34px
+        height: 34px
+        position: absolute
+        bottom: -34px
+        left: 70px
+      i
+        font-style: italic
+        font-weight: 500
+        font-size: 16px
+        line-height: 20px
+        margin-bottom: 6px
+        display: block
+      a
+        color: #53BF51
+        font-size: 16px
+        font-weight: 24px
+        text-decoration: underline
+        font-weight: bold
+    &__img
+      img
+        width: 190px
+    .play-video
+      position: absolute
+      right: 210px
+      bottom: 130px
+      +r(767)
+        right: 190px

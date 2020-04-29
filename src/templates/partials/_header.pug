@@ -1,0 +1,44 @@
+//BEGIN header
+header.header
+  .menu-open
+    span
+  .container
+    .row.align-items-center
+      .col-4
+        a(href="index.html").logo
+          | Neo
+          span ReTech
+      .col-8
+        .header__row
+          ul.header__nav
+            li
+              a(href="#") Why us
+            li
+              a(href="#") It’s important
+            li
+              a(href="#") Contacts
+          a(href="#").button-transparent Recycle 1kg
+//END header
+//BEGIN mobile menu
+.mobile-menu
+  ul.mobile-menu__menu
+    li
+      a(href="#") Why us
+    li
+      a(href="#") It’s important
+    li
+      a(href="#") Contacts
+  b Email us:
+    a(href="mailto: neoretech@gmail.com") neoretech@gmail.com
+  b Our socials:
+  ul.mobile-menu__social
+    li
+      a(href="#")
+        +icon('instagram')
+    li
+      a(href="#")
+        +icon('fb')
+    li
+      a(href="#")
+        +icon('youtube')
+//END mobile menu

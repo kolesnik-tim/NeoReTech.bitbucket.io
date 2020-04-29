@@ -1,0 +1,119 @@
+.footer
+  padding-top: 30px
+  &__title
+    position: relative
+    h2
+      font-weight: bold
+      font-size: 64px
+      color: #050606
+      margin-bottom: 40px
+      line-height: 1
+      +r(767)
+        font-size: 36px
+        margin-bottom: 30px
+    p
+      font-weight: normal
+      font-size: 34px
+      color: #7C7C7C
+      margin-bottom: 50px
+      +r(767)
+        font-size: 24px
+        margin-bottom: 30px
+      a
+        color: #53BF51
+        +r(767)
+          display: block
+          margin-top: 5px
+  &__content
+    background: #F1FCF7
+  &__consultation
+    padding: 35px 0 80px
+    +r(767)
+      padding-bottom: 35px
+    strong
+      font-weight: bold
+      font-size: 16px
+      display: block
+      color: #050606
+      margin-bottom: 25px
+    li
+      font-weight: 500
+      font-size: 16px
+      line-height: 1.5
+      margin-bottom: 10px
+      color: #050606
+      position: relative
+      padding-left: 30px
+      max-width: 400px
+      width: 100%
+      &::before
+        content: ''
+        width: 10px
+        height: 10px
+        background: #53BF51
+        border-radius: 50%
+        position: absolute
+        left: 0
+        top: 7px
+  &__social
+    padding-bottom: 60px
+    strong
+      font-weight: bold
+      font-size: 16px
+      display: block
+      color: #050606
+      margin-bottom: 25px
+    ul
+      display: flex
+      justify-content: space-between
+      width: 150px
+      a
+        svg
+          fill: #53BF51
+          font-size: 23px
+          +tr
+        &:hover
+          svg
+            transform: scale(1.2)
+  &__form
+    margin-top: -240px
+    background: #FFFFFF
+    border: 1px solid #F6F7F9
+    box-sizing: border-box
+    box-shadow: 0px 4px 20px rgba(198, 207, 217, 0.5)
+    border-radius: 8px
+    width: 100%
+    max-width: 445px
+    padding: 40px 50px
+    position: relative
+    left: 100%
+    transform: translate(-100%)
+    margin-bottom: 50px
+    +r(992)
+      margin-top: 0
+      left: 50%
+      transform: translate(-50%)
+    +r(767)
+      padding: 40px 20px
+    button
+      width: 90%
+      +relative-x
+      +r(767)
+        width: 100%
+  &__copyright
+    border-top: 1px solid #CFDEE3
+    padding: 25px 0
+    display: flex
+    justify-content: space-between
+    +r(767)
+      flex-direction: column
+      align-items: center
+    p
+      font-weight: 500
+      font-size: 16px
+      color: #050606
+      +r(767)
+        margin-bottom: 15px
+      a
+        color: #53BF51
+        text-decoration: underline

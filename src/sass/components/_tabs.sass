@@ -1,0 +1,63 @@
+.tabs
+  &__caption
+    display: flex
+    li
+      padding: 13px 40px
+      display: block
+      font-weight: bold
+      font-size: 16px
+      color: #050606
+      border-radius: 8px 8px 0px 0px
+      cursor: pointer
+      text-align: center
+      +tr
+      +r(767)
+        padding: 13px 31px
+      +r(374)
+        padding: 13px 15px
+      &:hover
+        color: #53BF51
+      &.active
+        background: #53BF51
+        color: #fff
+  &__content
+    display: none
+    height: 440px
+    overflow: auto
+    background: rgba(255, 255, 255, 0.8)
+    backdrop-filter: blur(8px)
+    &.active
+      display: block
+  &__table
+    tr
+      border-bottom: 1px solid #E0E0E0
+      align-items: center
+      display: flex
+      justify-content: space-between
+      padding: 15px 20px
+      +r(767)
+        flex-direction: column
+    &__date
+      +center
+    td
+      font-size: 16px
+      color: #050606
+      line-height: 24px
+      display: flex
+      width: 100%
+      padding: 0 5px
+      justify-content: space-between
+      b
+        font-weight: bold
+        color: #53BF51
+        width: 70px
+        display: inline-block
+        +r(767)
+          padding-top: 10px
+      span
+        color: #050606
+        margin-left: 30px
+        font-weight: 500
+        flex: 1
+        +r(767)
+          padding-top: 10px

@@ -6,8 +6,111 @@ block content
   // partial example
   include ./home/intro
   include ./home/future
-  include ./home/advantages
   include ./home/system
+  include ./home/advantages
   include ./home/success
   include ./home/article
   
+
+  .pop-up.pop-up-join.modal#pop-up-join
+    a(href="#" rel="modal:close").pop-up__close
+      span
+    .future__join
+      .future__join__text
+        h3 Join 
+          span #NeoReTech
+        p We recycled <br>
+          span 1 000 012 549 
+          | kg<br> and you can cooperate with us:
+      form.future__join__form.form
+        h3 
+          span 1$ 
+          | recycles = 
+          span 1 kg 
+          | of trash
+        .row
+          .col-lg-3.col-4
+            input(type="radio" name="join" id="join-1")
+            label(for="join-1") 1$
+          .col-lg-3.col-4
+            input(type="radio" name="join" id="join-2")
+            label(for="join-2") 5$
+          .col-lg-3.col-4
+            input(type="radio" name="join" id="join-3")
+            label(for="join-3") 10$
+          .col-lg-3.col-4
+            input(type="radio" name="join" id="join-4")
+            label(for="join-4") 20$
+          .col-lg-3.col-4
+            input(type="radio" name="join" id="join-5" checked)
+            label(for="join-5") 50$
+          .col-lg-3.col-4
+            input(type="radio" name="join" id="join-6")
+            label(for="join-6") 100$
+          .col-lg-6
+            input(type="text" placeholder="Other amount")
+          .col-12
+            .future__join__form__btn
+              a(href="#") FAQ
+              button.button-green Recycle
+
+
+
+
+  .pop-up.pop-up-about.modal#pop-up-about
+    a(href="#" rel="modal:close").pop-up__close
+      span
+    .pop-up__content
+      .pop-up__title
+        h3 
+          span Neo
+          | ReTech our future
+      p One of the worst environmental problems on the planet is plastic waste! If garbage dumps are undergoing a slow decomposition process, polluting the soil and groundwater, then in the World Ocean, as a result of sea currents, 16 drifting islands have formed, which are huge dumps made of plastic waste. One of the largest landfills of this kind is located in the Atlantic Ocean, the area of ​​which is more than 1,700,000 square meters. km - this exceeds the area of ​​three France !!!
+      p This waste pollutes the flora and fauna of the oceans! Fish, crabs, mollusks, and many other seafood that a person eats, are saturated with salts of heavy metals, such as: mercury, lead, cobalt, zinc, strontium, and many others, as a result, new unknown diseases appear on the planet! At the same time, such a sea dump of plastic bottles creates the effect of a giant lens that warms the ocean and plays a huge role in creating the greenhouse effect.
+      p Plastic is a material of petroleum origin, and therefore, it potentially stores huge amounts of energy. And consequently, this energy, which today simply goes to waste, can be released by converting plastic waste into its primary state - oil. Our NeoReTech Corporation has a unique technology for recycling plastic waste. The technical characteristics of the technology that our corporation managed to implement can be described as follows: using one ton of plastic raw material, you can get up to 95% of synthetic oil of medium or light fractions. Moreover, the quality of oil obtained from plastic was very high. It was also estimated that one plant that processes plastic into oil is capable of processing 10 thousand tons of plastic waste per year, yielding from 30 to 50 thousand barrels of high-quality synthetic oil. But this is just one installation! When solving financial issues, we can, within two to three years, completely clear the entire World Ocean from plastic islands!
+      p There are exact numbers for the United States. The introduction of a nationwide plastic waste processing facility would allow the United States to generate more than 150 million barrels of high-quality synthetic oil annually. And this would allow the United States to significantly reduce its spending on fuel purchases.
+
+  .pop-up.pop-up-development.modal#pop-up-development
+    a(href="#" rel="modal:close").pop-up__close
+      span
+    .pop-up__content
+      .pop-up__title
+        h3 
+          span Technology 
+          | that will change recycling
+      .pop-up-development__img
+        img(src="img/world.png", alt="")
+        p Section in development
+
+
+
+  .pop-up.pop-up-article.modal#pop-up-article
+    a(href="#" rel="modal:close").pop-up__close
+      span
+    .pop-up-article__img
+      img(src="img/article/article-img-1.jpg", alt="")
+    .pop-up__content
+      .pop-up__title
+        h3 7 horrible facts about global pollution 
+      strong It is the deadliest form of pollution, killing millions of people each year, according to a new study. <br>The Cost of Air Pollution, a joint report by the World Bank and the Institute for Health Metrics and Evaluation (IHME), also highlights the economic toll, showing that premature deaths linked to air pollution cost the global economy hundreds of billions of dollars in lost labour income.
+      span 92%
+      p More than nine out of 10 of the world’s population – 92% – lives in places where air pollution exceeds safe limits, according to research from the World Health Organization (WHO).
+      span 4th
+      p Air pollution is the fourth-largest threat to human health, behind high blood pressure, dietary risks and smoking. The health risks of breathing dirty air include respiratory infections and cardiovascular diseases, stroke, chronic lung disease and lung cancer.
+      span 6.5 million
+      p There were an estimated 6.5 million deaths worldwide from air pollution-related diseases in 2012, WHO data shows. That’s 11.6% of all global deaths – more than the number of people killed by HIV/AIDS, tuberculosis and road injuries combined.
+      span 94%
+      p Almost all deaths (94%) linked to air pollution occur in low- and middle-income countries, the WHO says. <br>Parts of Africa, Eastern Europe, India, China and the Middle East are the biggest regional danger spots. <br>More than 1 million air pollution-related deaths occurred in China and over 600,000 in India in 2012, according to the WHO. But the worst countries for deaths per head of population are in Eastern Europe. Ukraine, at the top of the table, had 120 deaths per 100,000 inhabitants in 2012.
+      span $225 billion
+      p The study by the World Bank and the Institute for Health Metrics and Evaluation (IHME) calculated the economic cost of air pollution. It found that air pollution led to one in 10 deaths in 2013, which cost the global economy about $225 billion in lost labour income.
+      span PM2.5
+      p Tiny particles, known as PM2.5, have a diameter of less than 2.5 micrometers and can penetrate deep into the lungs and cardiovascular system, increasing the risk of disease.
+      span 10mcg
+      p WHO guidelines state annual average concentrations of PM2.5 should be below 10 micrograms (mcg) per cubic meter, but the vast majority of the world's population is living in areas exceeding this limit.
+
+
+  .pop-up.pop-up-video.modal#pop-up-video
+    a(href="#" rel="modal:close").pop-up__close
+      p Close
+      span
+    

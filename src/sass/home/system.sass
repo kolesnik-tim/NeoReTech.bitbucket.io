@@ -1,21 +1,20 @@
 .system
-  padding-top: 115px
+  padding: 100px 0 50px
+  background: #F1FCF7
+  background-image: url('../img/can.png')
+  background-repeat: no-repeat
+  background-size: 350px auto
+  background-position: 40% 50%
+  +r(992)
+    background-position: 50% 80%
   +r(767)
     padding-top: 60px
-  h2
-    font-weight: bold
-    font-size: 64px
-    color: #050606
-    span
-      color: #53BF51
-    +r(767)
-      font-size: 36px
+    padding-bottom: 0
+  +r(575)
+    background-position: 50% 70%
   &__block
-    height: 100%
     +center-y
-    padding-bottom: 90px
-    +r(767)
-      padding-bottom: 60px
+    padding-bottom: 60px
     b
       font-size: 36px
       display: flex
@@ -42,12 +41,34 @@
         z-index: 4
     div
       flex: 1
-    h4
-      font-weight: bold
-      font-size: 16px
-      margin-bottom: 10px
     p
       color: #8D8D8C
       font-size: 16px
       font-weight: 500
       line-height: 1.5
+      margin-top: 5px
+
+  &__text
+    h3
+      font-weight: bold
+      font-size: 64px
+      line-height: 1.25
+      margin-bottom: 50px
+      +r(992)
+        font-size: 36px
+        margin-bottom: 30px
+      span
+        color: #53BF51
+    p
+      font-weight: 500
+      font-size: 16px
+      line-height: 1.5
+      color: #8D8D8C
+      margin-bottom: 50px
+      +r(992)
+        margin-bottom: 30px
+      span
+        color: #53BF51
+    a
+      +r(992)
+        margin-bottom: 50px

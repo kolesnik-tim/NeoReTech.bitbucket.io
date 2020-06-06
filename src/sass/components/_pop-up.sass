@@ -1,5 +1,6 @@
 .blocker
   z-index: 10
+  padding-top: 40px
 .close-modal
   display: none !important
 .pop-up
@@ -17,6 +18,7 @@
     top: 30px
     z-index: 10
     span
+      +tr
       &:before, &:after
         content: ''
         width: 26px
@@ -24,12 +26,16 @@
         background: #000
         position: absolute
         top: 13px
+        +tr
       &:before
         left: 2px
         transform: rotate(45deg)
       &:after
         right: 2px
         transform: rotate(-45deg)
+    &:hover
+      span:before, span:after
+        background: #53BF51
   &__content
     padding: 30px 95px
     +r(767)
@@ -242,3 +248,43 @@
       line-height: 24px
       color: #050606
       margin-bottom: 20px
+
+
+
+  &-video
+    max-height: 625px
+    height: 100%
+    padding: 0
+    overflow: visible
+    iframe
+      width: 100%
+      height: 100%
+    .pop-up__close
+      display: flex
+      width: auto
+      top: -25px
+      p
+        font-size: 14px
+        color: #FFFFFF
+        line-height: 17px
+        padding-right: 20px
+        display: block
+        +tr
+      span:before
+        background: #fff
+        right: 0
+        left: auto
+        width: 15px
+        top: 6px
+        height: 2px
+      span:after
+        background: #fff
+        right: 0
+        width: 15px
+        top: 6px
+        height: 2px
+      &:hover
+        span:before, span:after
+          background: #53BF51
+        p
+          color: #53BF51

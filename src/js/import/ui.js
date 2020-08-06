@@ -16,7 +16,7 @@ $('select').selectric();
 //fixed header
 $(window).scroll(function() {
   if($(window).width() >= 992) {
-    if($(window).scrollTop() >= 100) {
+    if($(window).scrollTop() >= 50) {
       $('.header').addClass('scroll');
     } else{
       $('.header').removeClass('scroll');

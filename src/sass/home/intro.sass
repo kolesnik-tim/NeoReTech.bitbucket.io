@@ -2,77 +2,13 @@
   height: 995px
   display: flex
   align-items: center
-  background-color: #F1FCF7
+  background: #F1FCF7
   position: relative
   overflow: hidden
-  background-image: url('../img/intro/pic.png')
-  background-repeat: no-repeat
-  background-position: 100% 0
-  background-size: auto 100%
-  padding-bottom: 130px
   +r(992)
     height: auto
     padding-top: 110px
-    padding-bottom: 70px
-    display: block
-    &::before
-      content: ''
-      background: #F1FCF7
-      opacity: 0.8
-      width: 100%
-      height: 100%
-      position: absolute
-      left: 0
-      top: 0
-  &__pastor
-    position: absolute
-    left: 50%
-    bottom: -4px
-    width: 475px
-    +r(992)
-      position: relative
-      left: 0
-      top: 0
-      padding-top: 70px
-      width: 100%
-      z-index: 2
-    img
-      width: 100%
-      position: relative
-      z-index: 3
-      +r(1140)
-        display: none
-    &__info
-      position: absolute
-      top: 40px
-      right: -80px
-      background: #FFFFFF
-      box-shadow: 0px 5px 30px rgba(198, 207, 217, 0.3)
-      border-radius: 8px
-      width: 415px
-      padding: 20px 65px
-      z-index: 2
-      +r(992)
-        position: relative
-        left: 0
-        top: 0
-        padding: 20px 35px
-        width: 100%
-      p
-        font-weight: bold
-        font-size: 16px
-        line-height: 24px
-        color: #050606
-        margin-bottom: 12px
-      span
-        font-weight: normal
-        font-size: 36px
-        line-height: 42px
-        color: #050606
-        span
-          color: #53BF51
-          font-weight: bold
-          margin-left: 10px
+    padding-bottom: 40px
   &__text
     height: 100%
     display: flex
@@ -82,7 +18,6 @@
     z-index: 7
     +r(992)
       padding-bottom: 20px
-      height: auto
     h1
       font-weight: bold
       font-size: 64px
@@ -99,83 +34,68 @@
       color: #8D8D8C
       margin-bottom: 60px
       +r(767)
-        margin-bottom: 0px
-    a
-      font-weight: bold
-      font-size: 16px
+        margin-bottom: 30px
+    div
       display: flex
       align-items: center
-      color: #53BF51
       +r(1200)
-        margin: 30px 0
-      i.icon-play
-        margin-right: 25px
-        +tr
-        background: linear-gradient(95.5deg, #53BF51 0%, #8BDC8A 100%)
-        box-shadow: 0px 5px 20px rgba(0, 177, 0, 0.5)
-        animation: pulse2 1.5s infinite
-        &::before
-          border-left: 12px solid #fff
-      &:hover
-        text-decoration: underline
-        i
-          transform: scale(1.1)
-          box-shadow: 0px 10px 20px rgba(198, 207, 217, 0.3)
+        flex-direction: column
+        align-items: flex-start
+      a:last-child
+        font-weight: bold
+        font-size: 16px
+        display: flex
+        align-items: center
+        color: #53BF51
+        margin-left: 30px
+        +r(1200)
+          margin: 30px 0
+        i.icon-play
+          margin-right: 25px
+          +tr
+          box-shadow: 0px 5px 30px rgba(198, 207, 217, 0.3)
+          animation: pulse2 2s infinite
+        &:hover
+          text-decoration: underline
+          i
+            transform: scale(1.1)
+            box-shadow: 0px 10px 20px rgba(198, 207, 217, 0.3)
 
-  &__num
-    background: #F1FCF7
-    border: 1px dashed #53BF51
-    width: 450px
-    padding: 30px 50px
+
+  &__parallax
     position: relative
-    &::before
-      content: ''
-      width: 1px
-      height: 200px
-      border-right: 1px dashed #53BF51
-      position: absolute
-      bottom: -200px
-      left: 50%
-      +r(992)
-        height: 70px
-        bottom: -70px
+    +center
+    height: 100%
+    left: -50px
     +r(992)
-      width: 100%
-      z-index: 3
-      padding: 8px 20px
-    +r(420)
-      padding: 8px 12px
-    strong
-      color: #050606
-      font-weight: bold
-      font-size: 16px
-      line-height: 24px
-      display: block
-      text-align: center
-      margin-bottom: 15px
-      +r(420)
-        font-size: 14px
-    span
-      font-weight: bold
-      font-size: 48px
-      display: flex
-      justify-content: center
-      color: #53BF51
-      +r(420)
-        font-size: 32px
-      span
-        margin-right: 12px
-        display: block
-        color: #000
-        font-weight: 500
-
-
+      left: 0
+      height: 300px
+    div
+      position: absolute
+    #basket
+      z-index: 7
+      img
+        width: 350px
+        +r(992)
+          width: 147px
+    #foliage
+      z-index: 6
+      img
+        width: 595px
+        +r(992)
+          width: 250px
+    #overcast
+      z-index: 5
+      img
+        width: 830px
+        +r(992)
+          width: 390px
 
 
 @keyframes pulse2
   0%
-    box-shadow: 0 0 0 0 rgba(0, 177, 0, 0.5)
+    box-shadow: 0 0 0 0 rgba(198, 207, 217, 0.4)
   70%
-    box-shadow: 0 0 0 15px rgba(0, 177, 0, 0)
+    box-shadow: 0 0 0 15px rgba(198, 207, 217, 0)
   100%
-    box-shadow: 0 0 0 0 rgba(0, 177, 0, 0)
+    box-shadow: 0 0 0 0 rgba(198, 207, 217, 0)

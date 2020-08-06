@@ -5,18 +5,16 @@ section.intro
         .intro__text
           h1 Together we can save the world
           p The more we share an awareness on the richness of the environment, the more we can protect it
-          a(href="#pop-up-video" rel="modal:open")
-            i.icon-play
-            | Why is it important?
-        .intro__num
-          strong First goal - Вuilding recucle Factory 
-          span
-            span $
-            | 180 000 000
-    .intro__pastor
-      img(src="img/intro/pastor.png", alt="")
-      .intro__pastor__info
-        p Collection progress:
-        span 
-          | $
-          span 0
+          div
+            a(href="#").button-green Participate
+            a(href="#")
+              i.icon-play
+              | Why is it important?
+      .col-lg-5
+        .intro__parallax
+          div#basket(data-scalar-y="9")
+            img(src="img/intro/basket.png", alt="" data-depth="0.2")
+          div#foliage(data-scalar-y="9" data-invert-x="false" data-invert-y="false")
+            img(src="img/intro/foliage.png", alt="" data-depth="0.3")
+          div#overcast(data-scalar-x="15")
+            img(src="img/intro/overcast-bg.png", alt="" data-depth="0.5")

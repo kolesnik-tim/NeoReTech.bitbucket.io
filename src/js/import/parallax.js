@@ -1,17 +1,17 @@
-// import Parallax from 'parallax-js';
+import Parallax from 'parallax-js';
 
 
 
 
-// //intro
-// var introBasket = document.getElementById('basket');
-// var parallaxIntro = new Parallax(introBasket);
+//intro
+var introBasket = document.getElementById('basket');
+var parallaxIntro = new Parallax(introBasket);
 
-// var introFoliage = document.getElementById('foliage');
-// var parallaxIntro = new Parallax(introFoliage);
+var introFoliage = document.getElementById('foliage');
+var parallaxIntro = new Parallax(introFoliage);
 
-// var introOvercast = document.getElementById('overcast');
-// var parallaxIntro = new Parallax(introOvercast);
+var introOvercast = document.getElementById('overcast');
+var parallaxIntro = new Parallax(introOvercast);
 
 
 // //future

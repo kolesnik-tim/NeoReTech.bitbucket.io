@@ -1,27 +1,72 @@
 section.future
   .container
-    .row
-      .col-lg-6.col-12
-        .future__text
-          img(src="img/logo_neoretech.svg", alt="") 
-          h3 our future
-          p Pollution is one of the biggest global killers, affecting over 100 million people. 
-          p Today there is greater need that we must promote better and efficient recycled of resources. 
-          p Environmental love and care must receive an all time attention and priority. Let’s go beyond the model building exercises for safer environment and turn them into reality. 
-          a(href="#pop-up-about" rel="modal:open").button-green 
-            span What is NeoRetech
-      .col-lg-6.col-12
-        .future__video
-          .future__video__text
-            i Learning to be more environ- mentally friendly is not that difficult task than we think.
-            i Start now!
-            a(href="#") Watch Recycle video
-          .future__video__img
-            img(src="img/future/girl.png", alt="")
-          a(href="#").play-video
-            i.icon-play
-              span
-              span
-              span
-              span
-            b Click play
+    .future__join
+      .future__join__text
+        h3 Join 
+          span #NeoReTech
+        p We recycled <br>
+          span 1 000 012 549 
+          | kg<br> and you can cooperate with us:
+      form.future__join__form.form
+        h3 
+          span 1$ 
+          | recycles = 
+          span 1 kg 
+          | of trash
+        .row
+          .col-lg-3.col-4
+            input(type="radio" name="join" id="join-1")
+            label(for="join-1") 1$
+          .col-lg-3.col-4
+            input(type="radio" name="join" id="join-2")
+            label(for="join-2") 5$
+          .col-lg-3.col-4
+            input(type="radio" name="join" id="join-3")
+            label(for="join-3") 10$
+          .col-lg-3.col-4
+            input(type="radio" name="join" id="join-4")
+            label(for="join-4") 20$
+          .col-lg-3.col-4
+            input(type="radio" name="join" id="join-5" checked)
+            label(for="join-5") 50$
+          .col-lg-3.col-4
+            input(type="radio" name="join" id="join-6")
+            label(for="join-6") 100$
+          .col-lg-6
+            input(type="text" placeholder="Other amount")
+          .col-12
+            .future__join__form__btn
+              a(href="#") FAQ
+              button.button-green Recycle
+  .future__content
+    .container
+      .row
+        .col-lg-6.col-12
+          .future__text
+            h2 
+              span Neo
+              | ReTech - step into the future
+            p Pollution is one of the biggest global killers, affecting over 100 million people. 
+            p Today there is greater need that we must promote better and efficient recycled of resources. 
+            p Environmental love and care must receive an all time attention and priority. Let’s go beyond the model building exercises for safer environment and turn them into reality. 
+        .col-lg-6.col-12
+          .future__parallax
+            #processing(data-scalar-y="9")
+              img(src="img/future/processing.png", alt="" data-depth="0.2")
+            #leaves(data-scalar-y="9" data-invert-x="false" data-invert-y="false")
+              img(src="img/future/leaves.png", alt="" data-depth="0.3")
+            #future-bg(data-scalar-x="15")
+              img(src="img/future/future-bg.png", alt="" data-depth="0.3")
+              img(src="img/future/future-bg-2.png", alt="" data-depth="0.5")
+        .col-lg-12
+          ul.future__list
+            li
+              span 2
+              b million tons of plastic per year will be recycled.
+            li
+              span 60
+              b percent of recyclable materials do not go to landfills.
+            li
+              span 98
+              b percent of plastic is recycled using our technology.
+

@@ -1,21 +1,20 @@
 .future
-  &__church
-    padding-bottom: 60px
-    +center
-    img
-      max-width: 830px
-      width: 100%
+  padding: 95px 0
+  +r(767)
+    padding: 50px 0
   &__join
     background: #FFFFFF
-    box-shadow: 0px 5px 30px rgba(198, 207, 217, 0.3)
     border-radius: 16px
-    position: relative
-    top: -120px
     display: flex
     overflow: hidden
+    margin-top: -220px
+    position: relative
+    z-index: 4
+    box-shadow: 0px 5px 30px rgba(198, 207, 217, 0.3)
+    margin-bottom: 90px
     +r(992)
       flex-direction: column
-      top: -30px
+      margin-top: 0
     span
       color: #53BF51
     &__text
@@ -78,9 +77,12 @@
         padding: 30px 20px
         flex: none
       h3
-        font-weight: bold
+        font-weight: normal
         font-size: 23px
-        padding-bottom: 50px
+        text-transform: none
+        span
+          font-weight: bold
+
         +r(992)
           text-align: center
           padding-bottom: 35px
@@ -115,124 +117,92 @@
           margin-right: -5px
           +r(500)
             width: 100%
-  &__content
-    overflow: hidden
-    +r(992)
-      padding-top: 50px
   &__text
-    padding-right: 40px
+    max-width: 480px
     +r(992)
-      padding-right: 0
-      padding-bottom: 40px
-    h2
+      padding-bottom: 50px
+    img
+      height: 95px
+      +r(767)
+        height: 50px
+    h3
       font-weight: bold
       font-size: 64px
-      line-height: 1.5
+      line-height: 1.3
       color: #050606
       margin-bottom: 50px
       +r(767)
-        font-size: 36px
+        font-size: 36px !important
         margin-bottom: 30px
-      span
-        color: #53BF51
     p
       font-weight: 500
       font-size: 16px
-      line-height: 1.6
       color: #8D8D8C
-      margin-bottom: 10px
-  &__parallax
-    height: 100%
-    position: relative
-    +center
-    +r(992)
-      height: 300px
-    div
-      position: absolute !important
-    #processing
-      z-index: 4
-      img
-        +r(992)
-          width: 200px
-    #leaves
-      z-index: 3
-      img
-        top: 110px !important
-        +r(992)
-          max-width: 340px
-          width: 100%
-          top: 70px !important
-    #future-bg
-      z-index: 2
-      img:first-child
-        z-index: 2
-        +r(992)
-          max-width: 340px
-          width: 100%
-      img:last-child
-        z-index: 1
-        top: -40px !important
-        left: auto !important
-        right: 70px 
-        +r(992)
-          max-width: 270px
-          width: 100%
-          top: -30px !important
-          right: 40px
-  &__list
-    margin-top: 70px
-    padding: 70px 0
-    position: relative
-    background: #fff
+      margin-bottom: 15px
+      line-height: 1.5
+    a
+      margin-top: 50px
+      +r(767)
+        margin-top: 30px
+  &__video
+    padding-top: 35px
     display: flex
-    justify-content: space-between
-    margin-bottom: 40px
+    align-items: flex-start
+    justify-content: flex-end
+    position: relative
+    +r(992)
+      justify-content: center
     +r(767)
-      flex-direction: column
-      margin-top: 40px
-      padding: 40px 10px
-      align-items: center
-    &::before, &:after
-      content: ''
-      width: 100%
-      height: 55px
-      background-image: url('../img/future/future-decor-1.png')
-      background-repeat: no-repeat
+      padding-top: 70px
+      justify-content: flex-end
+    +r(575)
+      padding-top: 200px
+    &__text
       position: absolute
+      z-index: 2
+      top: 0px
       left: 0
-      background-size: 100% auto
-      z-index: -1
-    &::before
-      top: -35px
-      +r(992)
-        top: -25px
-      +r(767)
-        top: -14px
-    &::after
-      bottom: -20px
-      +r(1200)
-        bottom: -30px
-      +r(767)
-        bottom: -44px
-
-    li
-      +center-y
-      span
-        font-size: 96px
-        color: #53BF51
-        font-weight: bold
-        margin-right: 10px
-        +r(767)
-          width: 130px
-          +center
-        +r(374)
-          font-size: 80px
-          width: 100px
-      b
-        font-weight: bold
+      padding: 15px
+      padding-bottom: 25px
+      margin-left: -20px
+      width: 315px
+      margin-bottom: 30px
+      background-image: url('../img/future/Union.png')
+      background-size: contain
+      background-repeat: no-repeat
+      +r(575)
+        left: 57%
+        transform: translate(-50%)
+        background-image: url('../img/future/Union-mobile.png')
+        height: 190px
+        width: 
+        padding: 25px
+        padding-top: 30px
+        padding-left: 35px
+      i
+        font-style: italic
+        font-weight: 500
         font-size: 16px
-        color: #000
-        line-height: 1.5
-        max-width: 180px
-        +r(767)
-          flex: 1
+        line-height: 20px
+        margin-bottom: 6px
+        display: block
+      a
+        color: #53BF51
+        font-size: 16px
+        font-weight: 24px
+        text-decoration: underline
+        font-weight: bold
+    &__img
+      img
+        width: 237px
+        +r(575)
+          width: 155px
+    .play-video
+      position: absolute
+      left: 120px
+      bottom: 100px
+      +r(767)
+        empty-cells: 220px
+      +r(575)
+        left: auto
+        right: 180px

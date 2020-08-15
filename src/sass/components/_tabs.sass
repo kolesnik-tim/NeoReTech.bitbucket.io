@@ -13,13 +13,45 @@
       +tr
       +r(767)
         padding: 13px 31px
+      +r(445)
+        padding: 13px 16px
       +r(374)
-        padding: 13px 15px
+        padding: 13px 10px
       &:hover
         color: #53BF51
       &.active
         background: #53BF51
         color: #fff
+      span
+        background: #FFC700
+        border-radius: 2px
+        padding: 4px
+        padding-right: 15px
+        font-weight: bold
+        font-size: 12px
+        display: inline-block
+        margin-left: 10px
+        position: relative
+        +r(767)
+          color: transparent
+          width: 14px
+          height: 14px
+          overflow: hidden
+          padding: 0
+        &::before
+          content: ''
+          width: 6px
+          height: 6px
+          border-radius: 50%
+          position: absolute
+          right: 5px
+          top: 8px
+          background: #fff
+          animation: pulse3 1.5s infinite
+          +r(767)
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
   &__content
     display: none
     height: 440px
@@ -61,3 +93,12 @@
         flex: 1
         +r(767)
           padding-top: 10px
+
+
+@keyframes pulse3
+  0%
+    opacity: 1
+  50%
+    opacity: 0
+  100%
+    opacity: 1

@@ -1,7 +1,7 @@
 .advantages
   overflow: hidden
   &__title
-    padding: 80px 0
+    padding: 80px 0 100px
     box-shadow: 0px 10px 15px 0px rgba(198, 207, 217, 0.3)
     z-index: 2
     position: relative
@@ -27,12 +27,62 @@
       font-size: 16px
       color: #8D8D8C
       line-height: 24px
+      margin-bottom: 50px
       +r(992)
+        margin-bottom: 30px
         z-index: 6
         position: relative
   &__content
-    background: linear-gradient(180deg, #F1FCF7 78.13%, rgba(241, 252, 247, 0) 100%)
+    background: linear-gradient(180deg, rgba(235, 242, 249, 0) 0%, #EBF2F9 100%)
     position: relative
+  &__info
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-top: 80px
+    padding-bottom: 110px
+    +r(1200)
+      align-items: flex-end
+    +r(992) 
+      padding-bottom: 25px
+    +r(767)
+      align-items: center
+    img
+      width: 125px
+      margin-bottom: 45px
+      +r(1200)
+        margin-right: 80px
+      +r(767)
+        margin-right: 0
+    strong
+      display: block
+      font-weight: bold
+      font-size: 24px
+      line-height: 29px
+      color: #53BF51
+      width: 100%
+      padding-left: 30px
+      margin-bottom: 25px
+      max-width: 290px
+      width: 100%
+    p
+      font-weight: 500
+      font-size: 16px
+      line-height: 24px
+      color: #000
+      padding-left: 30px
+      display: block
+      position: relative
+      max-width: 290px
+      width: 100%
+      &::before
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        width: 5px
+        height: 100%
+        background: #53BF51
   &__world
     position: relative
     margin-top: -265px
@@ -45,6 +95,49 @@
       margin-top: 110px
       width: auto
       margin-left: 0
+    &__quote
+      position: absolute
+      background: #FCFCFC
+      border: 1px solid #53BF51
+      border-radius: 8px
+      top: -200px
+      padding: 30px 20px
+      z-index: 10
+      +r(992)
+        display: none
+      &:before, &::after
+        content: ''
+        position: absolute
+        bottom: -48px
+        width: 30px
+        height: 30px
+        left: 50%
+        transform: translate(-50%)
+        border: 20px solid transparent
+      &::before
+        border-top: 30px solid #53BF51
+        bottom: -50px
+      &:after
+        border-top: 30px solid #fff
+      i
+        font-style: italic
+        font-weight: normal
+        font-size: 24px
+        line-height: 36px
+        color: #53BF51
+        margin-bottom: 13px
+        position: relative
+        svg
+          fill: #000
+          font-size: 25px 
+          position: absolute
+          left: 0px
+          top: -5px
+      p
+        font-size: 18px
+        line-height: 36px
+        color: #8D8D8C
+        text-align: center
     &__img
       position: relative
       border-radius: 50%
@@ -215,54 +308,4 @@
               left: -84px
 
 
-  &__video
-    padding-top: 35px
-    display: flex
-    flex-direction: column
-    align-items: flex-end
-    position: relative
-    +r(992)
-      padding-top: 180px
-    +r(767)
-      padding-top: 70px
-    &__text
-      background: #fff
-      box-shadow: 0px 4px 20px rgba(198, 207, 217, 0.5)
-      border-radius: 19px
-      position: relative
-      z-index: 2
-      padding: 15px
-      max-width: 285px
-      width: 100%
-      margin-bottom: 30px
-      &::before
-        content: ''
-        background-image: url('../img/advantages/triangle.png')
-        +cover
-        width: 34px
-        height: 34px
-        position: absolute
-        bottom: -34px
-        left: 70px
-      i
-        font-style: italic
-        font-weight: 500
-        font-size: 16px
-        line-height: 20px
-        margin-bottom: 6px
-        display: block
-      a
-        color: #53BF51
-        font-size: 16px
-        font-weight: 24px
-        text-decoration: underline
-        font-weight: bold
-    &__img
-      img
-        width: 190px
-    .play-video
-      position: absolute
-      right: 210px
-      bottom: 130px
-      +r(767)
-        right: 190px
+  

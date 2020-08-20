@@ -53,8 +53,11 @@
         i.icon-play
           margin-right: 25px
           +tr
-          box-shadow: 0px 5px 30px rgba(198, 207, 217, 0.3)
+          box-shadow: 0px 5px 20px rgba(0, 177, 0, 0.5)
           animation: pulse2 2s infinite
+          background: linear-gradient(95.5deg, #53BF51 0%, #8BDC8A 100%)
+          &::before
+            border-left: 12px solid #fff
         &:hover
           text-decoration: underline
           i
@@ -94,8 +97,9 @@
 
 @keyframes pulse2
   0%
-    box-shadow: 0 0 0 0 rgba(198, 207, 217, 0.4)
+    box-shadow: 0px 0px 0px rgba(0, 177, 0, 0)
+    // box-shadow: 0 0 0 0 rgba(198, 207, 217, 0.4)
   70%
-    box-shadow: 0 0 0 15px rgba(198, 207, 217, 0)
+    box-shadow: 0px 5px 20px rgba(0, 177, 0, 0.5)
   100%
-    box-shadow: 0 0 0 0 rgba(198, 207, 217, 0)
+    box-shadow: 0px 0px 0px rgba(0, 177, 0, 0)

@@ -18,7 +18,7 @@
     span
       color: #53BF51
     &__text
-      padding: 65px
+      padding: 40px 65px
       width: 100%
       flex: 1 1 0
       position: relative
@@ -31,7 +31,7 @@
         font-weight: bold
         font-size: 36px
         color: #050606
-        padding-bottom: 40px
+        padding-bottom: 20px
         +r(992)
           text-align: center
           font-size: 24px
@@ -41,11 +41,30 @@
         color: #050606
         font-weight: normal
         line-height: 1.4
+        margin-bottom: 30px
         +r(992)
           text-align: center
         span
           font-weight: bold
           font-size: 30px
+      h4
+        border: 1px solid #53BF51
+        box-sizing: border-box
+        border-radius: 8px
+        background: #EFFAEF
+        color: #050606
+        font-weight: bold
+        font-size: 24px
+        max-width: 380px
+        width: 100%
+        padding: 25px 32px
+        text-align: center
+        +r(1200)
+          padding: 25px 9px
+        +r(992)
+          +relative-x
+        span
+          color: #53BF51
     &__form
       width: 100%
       flex: 1 1 0
@@ -76,16 +95,6 @@
       +r(992)
         padding: 30px 20px
         flex: none
-      h3
-        font-weight: normal
-        font-size: 23px
-        text-transform: none
-        span
-          font-weight: bold
-
-        +r(992)
-          text-align: center
-          padding-bottom: 35px
       input
         background: #F6F7F9
         border-radius: 40px
@@ -100,18 +109,23 @@
         color: #050606
       &__btn
         display: flex
-        justify-content: flex-end
+        justify-content: space-between
         align-items: center
+        margin-top: 20px
         +r(767)
           flex-direction: column-reverse
           padding-top: 20px
-        a
-          margin-right: 60px
-          color: #8D8D8C
+        p
+          font-weight: 500
+          max-width: 170px
+          width: 100%
+          display: block
+          font-size: 16px
           +r(767)
-            margin-right: 0
-            padding-top: 23px
-          &:hover
+            margin-top: 20px
+          a
+            color: #53BF51
+            font-weight: 600
             text-decoration: underline
         button
           margin-right: -5px
@@ -206,3 +220,18 @@
       +r(575)
         left: auto
         right: 180px
+      &::before
+        content: ''
+        width: 1px
+        height: 115px
+        background-image: linear-gradient(#53BF51 50%, rgba(255,255,255,0) 0%)
+        background-position: right
+        background-size: 10px 10px
+        background-repeat: repeat-y
+        display: block
+        position: absolute
+        bottom: calc(-100% - 65px)
+        +r(1200)
+          bottom: calc(-100% - 90px)
+        +r(992)
+          display: none
